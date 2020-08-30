@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after, *:focus {
+    box-sizing: inherit;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 84px 28px 48px 28px;
+}
+
+.container {
+    height: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 89px;
+    margin-bottom: 36px;
+}
+
+.title {
+    color: #969696;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.title > span {
+    color: #15202A;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #15202A;
+    font-weight: 300;
+    margin-bottom: 37px;
+}
+
+.input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-gap: 16px;
+    margin-bottom: 14.6%;
+}
+
+.input-container > input {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    border: 1px solid #C2D3FF;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #15202A;
+    margin-right: 16px;
+}
+
+::placeholder {
+    color: #B8C7ED;
+}
+
+.input-button {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    background: #4C7BF3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px 5px rgba(76, 123, 243, 0.23);
+    cursor: pointer;
+}
+
+.dashboard-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 11.25%;
+}
+
+.footer {
+    font-size: 12px;
+    font-weight: 300;
+    color: #969696;
+}
+
+.social-media-icons {
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.icon-container {
+    margin-right: 13px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid rgba(76, 123, 243, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+    .wrapper {
+        padding-bottom: 36px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: 31px;
+    }
+
+    .input-container {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 0 20px;
+    }
+
+    .input-container > input {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .input-button {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .logo {
+        width: 56px;
+        margin-bottom: 29px;
+    }
+}
